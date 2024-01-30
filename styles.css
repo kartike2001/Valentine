@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('LoveYaLikeASister-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: MyCustomFont, sans-serif;
+    background-color: #ffccf9;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #d6336c; /
+    text-shadow: 2px 2px 4px #ff99cc;
+}
+
+/* Header Styles */
+header.bg-pink {
+    background-color: #ff99cc;
+    text-align: center;
+    font-family: MyCustomFont, sans-serif;
+}
+
+#loveMessage p {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ff6699;
+}
+
+
+
+#revealButton, #createBouquetButton, #loveMeterButton{
+    background-color: #ff3366;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#surpriseMessage {
+    color: #ff3366;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.btn-success, .btn-danger {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer.bg-pink {
+    background-color: #ff99cc;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Love Meter Styles */
+#loveMeter {
+    margin-top: 20px;
+}
+
+#meterContainer {
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#meterFill {
+    background-color: #ff3366;
+    width: 0%;
+    height: 100%;
+    transition: width 2s;
+}
+
+#musicPlayer {
+    margin-top: 20px;
+}
+
+#musicPlayer audio {
+    width: 100%;
+    max-width: 300px;
+}
+
+#bouquetResult img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #FF3366FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#bouquetResult img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.btn-pink {
+    background-color: #ff3366;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-pink:hover {
+    background-color: #e62e5c;
+}
+
+.heart {
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: float 5s ease-in infinite;
+}
+
+.heart:before,
+.heart:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart:before {
+    top: -5px;
+    left: 0;
+}
+
+.heart:after {
+    top: 0;
+    left: 5px;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, -1000px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 200px;
+    }
+}
